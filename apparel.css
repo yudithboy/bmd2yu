@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+.nav_links a.active {
+    color: #00ccff;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #00ccff;
+}
+
+.navbutton {
+    padding: 9px 25px;
+    background-color: white;
+    color: black;
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+}
+
+.navbutton:hover {
+    background-color: #00ccff;
+    color: white;
+}
+
+/* judul apparel */
+
+.judulApparel {
+    font-family: "Montserrat", sans-serif;
+    background-image: url(accesories/bgfix.jpg);
+    padding: 20px;
+    color: white;
+}
+
+.judulApparel .display-1 {
+    font-size: 40px;
+}
+
+.judulApparel p {
+    margin-top: 30px;
+    padding: 20px 10px;
+    font-size: 16px
+}
+
+.judulApparel h3 {
+    font-size: 48px;
+    /* Ukuran font untuk layar besar */
+}
+
+/* kategori */
+.kategori {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.kategori li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: black;
+}
+
+.kategori li a {
+
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 0.05s ease-in-out;
+}
+
+.kategori li a:hover {
+    color: #00ccff;
+    font-weight: bold;
+
+}
+
+
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-radius: 40;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.custom-card {
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.mt-auto {
+    margin-top: auto;
+    text-align: center;
+}
+
+
+.btn-dark {
+    color: #fff;
+    border-color: #343a40;
+}
+
+.btn-dark:hover {
+    background-color: #00ccff;
+    border-color: #00ccff;
+}
+
+
+/* accesories */
+.accesories {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+/* apparel */
+.apparel {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.ap {
+    margin-bottom: 200px;
+}
+
+
+/* Page */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+.page_links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+
+.page_links li {
+    margin: 0 5px;
+}
+
+.page_links li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page_links li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Footer */
+.wrapper {
+    text-align: right;
+}
+
+.wrapper .icon {
+    font-size: 40px;
+    display: inline-block;
+    color: white;
+}
+
+
+.footer {
+    background-color: #24252a;
+}
+
+.footer p {
+    color: white;
+}
+
+.row h4 {
+    color: white;
+}
+
+.wrapper h4 {
+    color: white;
+    margin-top: 30px;
+}
+
+.icon {
+    margin-bottom: 60px;
+    margin-right: 10px;
+}
+
+.icon a .tooltip {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    color: #fff;
+    padding: 6px 12px;
+}
+
+
+.icon:hover {
+    color: #00ccff;
+}
+
+/* Responsive Styles */
+@media (min-width: 1200px) {
+    .judulApparel .display-1 {
+        font-size: 72px;
+    }
+
+    .judulApparel p {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_links li {
+        margin: 10px 0;
+    }
+
+    .Tombol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Tombol .navbutton {
+        margin: 10px 0;
+    }
+
+    .card.custom-card {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer .wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .judulApparel .display-1 {
+        font-size: 56px;
+    }
+
+    .judulApparel p {
+        font-size: 20px;
+    }
+
+    .judulApparel h3 {
+        font-size: 40px;
+        /* Ukuran font untuk layar sedang */
+    }
+}
+
+@media(max-width:649px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .nav_links li {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .judulApparel {
+        font-size: 48px;
+        padding: 10px;
+    }
+
+    .judulApparel p {
+        font-size: 18px;
+    }
+
+    .judulApparel h3 {
+        font-size: 32px;
+        margin: 0;
+        /* Ukuran font untuk layar kecil */
+    }
+
+    .kategori {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kategori li {
+        margin: 10px 0;
+    }
+
+    .card.custom-card {
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
